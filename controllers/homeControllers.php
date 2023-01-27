@@ -6,6 +6,6 @@
 	{
 
 		public function index(){
-			\view::render();
+			\views\mainView::render('home.php');
 		}
 	}
