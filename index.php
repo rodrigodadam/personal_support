@@ -10,14 +10,8 @@
 
 	spl_autoload_register($autoload);
 
-	$pdo = \MySql::conectar();
-
-	Router::get('/home/',function(){
-		echo '<h2> Home </h2>';
-	});
-
-	Router::get('/home/?', function($par){
-		echo $par[2];
+	Router::get('/',function(){
+		
 	});
 
 ?>
